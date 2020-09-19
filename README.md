@@ -23,7 +23,7 @@ python3 -m venv .venv
 ```
 * For Windows
 ```
-virtualenv env
+virtualenv .venv
 ```
 
 3. Activate virtual environment

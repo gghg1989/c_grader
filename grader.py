@@ -60,17 +60,11 @@ def main():
         assignment_number=1,
         commands=COMMANDS[1]
     )
-    # df = grader.extract_all()
-    grader.file_compare(['Die.java', 'DiceOddsTester.java'])
-    # df = grader.pre_clean_all()
-    # df = grader.make_all()
-    # df = grader.run_all()
-    # df = grader.validate_all()
-    # df = grader.clean_all()
-    # df = grader.check_clean_all()
-    # df.to_csv(SUBMISSIONS_DIR+'/extracted/grader_output.csv')
-#     grader.remove_all()
-    # return df
+    # Extract all submissions from zip file.
+    df = grader.extract_all()
+
+    # Compare no_touch files with the submitted files.
+    # grader.file_compare(['Die.java', 'DiceOddsTester.java'])
 
 if __name__ == '__main__':
     main()
